@@ -114,8 +114,8 @@ If you have any questions, please consult the references at the end of this docu
 6. Build and run the Docker image:
    
 ```bash
-docker build -t gosungrow-mqtt-bridge .
-docker run -d gosungrow-mqtt-bridge
+docker build -t gosungrow2mqtt .
+docker run -d --name gosungrow2mqtt gosungrow2mqtt
 ```
 
 The application will start and begin consuming data from the GoSungrow API and publishing it to the Home Assistant MQTT in a loop with the time defined in `.env`.
